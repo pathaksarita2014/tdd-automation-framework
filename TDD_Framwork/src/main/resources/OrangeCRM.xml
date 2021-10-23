@@ -1,0 +1,20 @@
+<AutomationOrangeCRM>
+    <staging>
+        <ValidateRegisterUserPage>
+            <tbx_UserName>
+                <xpath>//input[@id='txtUsername']</xpath>
+            </tbx_UserName>
+            <tbx_Password>
+                <xpath>//input[@id='txtPassword']</xpath>
+            </tbx_Password>
+            <btn_LogIn>
+                <xpath>//input[@id='btnLogin']</xpath>
+            </btn_LogIn>//a[@id='menu_pim_viewPimModule']/b
+            <btn_PMIMenu>
+                <xpath>//a[@id='menu_pim_viewPimModule']/b</xpath>
+            </btn_PMIMenu>
+        </ValidateRegisterUserPage>
+    </staging>
+
+</AutomationOrangeCRM>
+

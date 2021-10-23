@@ -1,0 +1,218 @@
+<AutomationShoppingApp>
+    <staging>
+        <HomePage>
+            <btn_SignIn>
+                <xpath>//a[contains(text(),'Sign in')]</xpath>
+            </btn_SignIn>
+            <btn_SignOut>
+                <xpath>//a[contains(text(),'Sign out')]</xpath>
+            </btn_SignOut>
+
+            <tbx_EmailCreate>
+                <xpath>//input[@id='email_create']</xpath>
+            </tbx_EmailCreate>
+            <btn_CreateAnAccount>
+                <xpath>//button[@id='SubmitCreate']</xpath>
+            </btn_CreateAnAccount>
+
+            <lbl_CustomerName>
+                <xpath>//span[text()='Tarun Sachdeva']</xpath>
+            </lbl_CustomerName>
+            <btn_TShirt>
+                <xpath>//a[@title='Dresses']</xpath>
+            </btn_TShirt>
+            <btn_Women>
+                <xpath>//a[@title='Women']</xpath>
+            </btn_Women>
+            <lbl_SuccessMessage>
+                <xpath>//*[@id='layer_cart']/div[1]/div[2]/h2/span[2]</xpath>
+            </lbl_SuccessMessage>
+            <btn_Search>
+                <xpath>//button[@type='submit']</xpath>
+            </btn_Search>
+            <btn_Account>
+                <xpath>//a[@class='account']</xpath>
+            </btn_Account>
+            <btn_Item>
+                <xpath>//a[contains(@title,'Faded')]</xpath>
+            </btn_Item>
+            <btn_AddToCart>
+                <xpath>//button[@name='Submit']</xpath>
+            </btn_AddToCart>
+            <btn_CheckOut>
+                <xpath>//a[contains(@title,'checkout')]</xpath>
+            </btn_CheckOut>
+            <switc_Window>
+                <xpath>//iframe[@class='fancybox-iframe']</xpath>
+            </switc_Window>
+            <total_price>
+                <xpath>//td[@id='total_price_container']</xpath>
+            </total_price>
+            <btn_ProceedeToCheckOut>
+                <xpath>//a[contains(@class,'standard-checkout')]</xpath>
+            </btn_ProceedeToCheckOut>
+
+            <btn_ProceedeToProcess>
+                <xpath>//button[@type='submit' and contains(@name,'process')]</xpath>
+            </btn_ProceedeToProcess>
+            <btn_ProceedeToCarrier>
+                <xpath>//button[@type='submit' and contains(@name,'Carrier')]</xpath>
+            </btn_ProceedeToCarrier>
+
+            <btn_checkbox>
+                <xpath>//input[@type='checkbox' and @id='cgv']</xpath>
+            </btn_checkbox>
+            <btn_bankwire>
+                <xpath>//a[@class='bankwire' and contains(@title,'bank wire')]</xpath>
+            </btn_bankwire>
+            <btn_confirm>
+                <xpath>//span[text()='I confirm my order']</xpath>
+            </btn_confirm>
+            <lbl_confirm>
+                <xpath>//p[@class='cheque-indent']</xpath>
+            </lbl_confirm>
+            <lbl_confirmPrice>
+                <xpath>//span[@class='price']</xpath>
+            </lbl_confirmPrice>
+            <lbl_AccountOwner>
+                <xpath>//div[@id='center_column']/div/strong[1]</xpath>
+            </lbl_AccountOwner>
+            <lbl_BankName>
+                <xpath>//div[@id='center_column']/div/strong[3]</xpath>
+            </lbl_BankName>
+        </HomePage>
+
+        <LoginPage>
+            <tbx_EmailAddress>
+                <xpath>//input[@id='email']</xpath>
+            </tbx_EmailAddress>
+            <tbx_Password>
+                <xpath>//input[@id='passwd']</xpath>
+            </tbx_Password>
+            <btn_SignIn>
+                <xpath>//button[@id='SubmitLogin']</xpath>
+            </btn_SignIn>
+        </LoginPage>
+
+        <RegistrationPage>
+
+            <tbx_FirstName>
+                <xpath>//input[@id='customer_firstname']</xpath>
+            </tbx_FirstName>
+            <tbx_LastName>
+                <xpath>//input[@id='customer_lastname']</xpath>
+            </tbx_LastName>
+            <tbx_Email>
+                <xpath>//input[@id = 'email']</xpath>
+            </tbx_Email>
+            <tbx_Password>
+                <xpath>//input[@id = 'passwd']</xpath>
+            </tbx_Password>
+        </RegistrationPage>
+
+        <OrderPage>
+            <tab_TShirt>
+                <xpath>//div[@id='block_top_menu']/ul/li[3]/a</xpath>
+            </tab_TShirt>
+        </OrderPage>
+    </staging>
+    <sit>
+
+    </sit>
+    <regression>
+        <PaymentValidationPage>
+            <btn_GenerateNumber>
+                <xpath>//nav[@id='nav']/a[2]</xpath>
+            </btn_GenerateNumber>
+            <btn_Cart>
+                <xpath>//nav[@id='nav']/a[1]</xpath>
+            </btn_Cart>
+            <btn_Buy>
+                <xpath>//input[@type='submit' and contains(@value,'Buy')]</xpath>
+            </btn_Buy>
+            <lbl_CardNumber>
+                <xpath>//*[@id='three']/div/h4[1]</xpath>
+            </lbl_CardNumber>
+            <lbl_CVV>
+                <xpath>//*[@id='three']/div/h4[2]</xpath>
+            </lbl_CVV>
+            <ddl_Quantity>
+                <xpath>//select[@name='quantity']</xpath>
+            </ddl_Quantity>
+            <lbl_Price>
+                <xpath>//section[@id='three']/div/form/div/div[2]/h3</xpath>
+            </lbl_Price>
+        </PaymentValidationPage>
+
+
+        <PaymentPage>
+            <lbl_Amount>
+                <xpath>//*[@id='three']/div/form/div[1]/div/font[2]</xpath>
+            </lbl_Amount>
+            <txt_EnterCardNumber>
+                <xpath>//input[@id='card_nmuber']</xpath>
+            </txt_EnterCardNumber>
+            <txt_CVVNumber>
+                <xpath>//input[@id='cvv_code']</xpath>
+            </txt_CVVNumber>
+            <ddl_Month>
+                <xpath>//select[@id='month']</xpath>
+            </ddl_Month>
+            <ddl_Year>
+                <xpath>//select[@name='year']</xpath>
+            </ddl_Year>
+            <btn_Pay>
+                <xpath>//input[@type='submit' and contains(@value,'Pay')]</xpath>
+            </btn_Pay>
+            <lbl_OrderID>
+                <xpath>//*[@id='three']/div/div/h2</xpath>
+            </lbl_OrderID>
+            <btn_CheckLimit>
+                <xpath>//*[@id='nav']/a[3]</xpath>
+            </btn_CheckLimit>
+        </PaymentPage>
+
+        <CheckLimitPage>
+            <txt_EnterCraditCardNumber>
+                <xpath>//input[@id='card_nmuber']</xpath>
+            </txt_EnterCraditCardNumber>
+            <btn_Submit>
+                <xpath>//input[@type='submit']</xpath>
+            </btn_Submit>
+            <lbl_CardBalance>
+                <xpath>//*[@id="three"]/div/div/h4/span</xpath>
+            </lbl_CardBalance>
+            <lbl_OrderID>
+                <xpath>//*[@id="three"]/div/div/table/tbody/tr/td[6]/b/font</xpath>
+            </lbl_OrderID>
+            <lbl_SuccessMessage>
+                <xpath>//*[@id='three']/div/div/h2</xpath>
+            </lbl_SuccessMessage>
+        </CheckLimitPage>
+
+        <BookStorePage>
+            <lbl_SearchText>
+                <xpath>//input[@id='searchBox']</xpath>
+            </lbl_SearchText>
+            <btn_Search>
+                <xpath></xpath>
+            </btn_Search>
+            <btn_BookTitle>
+                <xpath>//div[contains(text(),'Title')]</xpath>
+            </btn_BookTitle>
+            <btn_BookAuther>
+                <xpath>//div[contains(text(),'Author')]</xpath>
+            </btn_BookAuther>
+            <btn_Next>
+                <xpath>//button[contains(text(),'Next') and @type='button']</xpath>
+            </btn_Next>
+            <lbl_Auther>
+                <xpath>//div[contains(@class,'rt-tr')]/div[3]</xpath>
+            </lbl_Auther>
+        </BookStorePage>
+
+
+
+    </regression>
+</AutomationShoppingApp>
+
