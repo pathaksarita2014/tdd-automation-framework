@@ -9,7 +9,6 @@ import org.testng.annotations.Test;
 //-----DataProvider example recording of date 28 FEB------//
 public class LoginTests extends Hookes
 {
-
     private OrderPage orderPage;
 
     @Test(dataProvider = "ExcelDataProvider", dataProviderClass = DataProviderUtils.class)
