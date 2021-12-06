@@ -7,4 +7,9 @@ public class WelcomeTest
     {
 
     }
+
+    public void login2 ()
+    {
+
+    }
 }
