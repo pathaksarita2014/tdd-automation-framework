@@ -62,5 +62,8 @@ public class VarifyingShoppingOrderTest extends Hookes
         OrderPage orderPage= new OrderPage();
         orderPage.clickOnSelectedItem("tab_TShirt");
     }
+
+    @Test
+    public void NewTest(){}
 }
 

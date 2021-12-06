@@ -31,14 +31,14 @@ public class Hookes  implements ITestListener
     @Override
     public void onTestFailure(ITestResult result)
     {
-        try {
+       /* try {
             String base64 = WebComponents.captureSnapshot(getTestMethodName(result), WebDriverManager.GetrealWebDriver().get());
             ExtentTestManager.getTest().log(LogStatus.FAIL, "Test Failed");
             ExtentTestManager.getTest().log(LogStatus.FAIL,
                     ExtentTestManager.getTest().addBase64ScreenShot(base64));
         }catch(Exception e) {
 
-        }
+        }*/
 
     }
     @Override
